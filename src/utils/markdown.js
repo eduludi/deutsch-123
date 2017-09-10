@@ -1,5 +1,4 @@
 import React from 'react'
-// import SimpleMarkdown from 'simple-markdown'
 import reactStringReplace from 'react-string-replace'
 
 export const defaultInlineTags = {
@@ -32,7 +31,7 @@ const parseMarkdown = (input = '', { inlineTags = defaultInlineTags } = {}) => {
   let output = input
   for (const inlineRule of inlineRules(inlineTags)) {
     output = reactStringReplace(output, inlineRule.match, (text, key) => (
-      <inlineRule.replace text={text} key={key} />
+      <inlineRule.replace text={text} key={inlineRule.match + key} />
     ))
   }
 
