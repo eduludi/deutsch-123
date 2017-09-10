@@ -13,6 +13,11 @@ const md = text =>
           <strong>{text}</strong>
         </Color>
       ),
+      em: ({ text }) => (
+        <Color name="gray">
+          <em>{text}</em>
+        </Color>
+      ),
     },
   })
 
