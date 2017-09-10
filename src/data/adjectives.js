@@ -46,7 +46,7 @@ export const definiter = {
 
 export const indefiniter = {
   headers: [
-    { title: 'Nominativ', hint: 'Das ist/sinde...' },
+    { title: 'Nominativ', hint: 'Das ist/sind...' },
     { title: 'Akkusativ', hint: 'Ich hatte gern...' },
     { title: 'Dativ', hint: 'mit ...' },
   ],
