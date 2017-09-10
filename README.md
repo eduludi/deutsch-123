@@ -1,6 +1,14 @@
 # Deutsch 123
 
-App to learn some german grammar rules
+App to learn some german grammar rules.
+
+## Features
+
+So far:
+
+* Adjective declination: Adjektivdeklination
+
+... more coming
 
 ## Requirements
 

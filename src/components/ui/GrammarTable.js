@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Header, Label, Table } from 'semantic-ui-react'
+import { Header, Label, Table } from 'semantic-ui-react'
 
 import { Color } from './snippets'
 import { parseMarkdown, defaultInlineTags } from '../../utils/markdown'
@@ -16,7 +16,7 @@ const md = text =>
     },
   })
 
-const GramaticTable = ({ title, data, value }) => (
+const GramaticTable = ({ title, data, value, nouns }) => (
   <div>
     <br />
     <Header>{title}</Header>
@@ -44,23 +44,16 @@ const GramaticTable = ({ title, data, value }) => (
             </Table.Cell>
             {row.cols.map((col, key) => (
               <Table.Cell key={key}>
-                <Grid>
-                  <Grid.Row>
-                    {col.start ? (
-                      <Grid.Column textAlign="center" width={4}>
-                        {md(col.start)}
-                      </Grid.Column>
-                    ) : null}
-                    <Grid.Column width={12}>
-                      <Color name="green">
-                        <em>{value}</em>
-                      </Color>
-                      <Color name="red">
-                        <strong>{col.ending}</strong>
-                      </Color>
-                    </Grid.Column>
-                  </Grid.Row>
-                </Grid>
+                {col.start ? md(col.start) : null}
+                &nbsp;
+                <Color name="green">
+                  <em>{value}</em>
+                </Color>
+                <Color name="red">
+                  <strong>{col.ending}</strong>
+                </Color>
+                &nbsp;
+                {nouns[row.gender]}
               </Table.Cell>
             ))}
           </Table.Row>

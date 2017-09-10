@@ -7,6 +7,7 @@ export const definiter = {
   rows: [
     {
       header: { title: 'Maskulin', color: 'blue' },
+      gender: 'm',
       cols: [
         { start: 'der', ending: 'e' },
         { start: 'de**n**', ending: 'en' },
@@ -15,6 +16,7 @@ export const definiter = {
     },
     {
       header: { title: 'Neutrum', color: 'green' },
+      gender: 'n',
       cols: [
         { start: 'das', ending: 'e' },
         { start: 'das', ending: 'e' },
@@ -23,6 +25,7 @@ export const definiter = {
     },
     {
       header: { title: 'Feminin', color: 'red' },
+      gender: 'f',
       cols: [
         { start: 'die', ending: 'e' },
         { start: 'die', ending: 'e' },
@@ -31,6 +34,7 @@ export const definiter = {
     },
     {
       header: { title: 'Plural', color: 'yellow' },
+      gender: 'p',
       cols: [
         { start: 'die', ending: 'en' },
         { start: 'die', ending: 'en' },
@@ -49,6 +53,7 @@ export const indefiniter = {
   rows: [
     {
       header: { title: 'Maskulin', color: 'blue' },
+      gender: 'm',
       cols: [
         { start: 'ein', ending: 'er' },
         { start: 'ein**en**', ending: 'en' },
@@ -57,6 +62,7 @@ export const indefiniter = {
     },
     {
       header: { title: 'Neutrum', color: 'green' },
+      gender: 'n',
       cols: [
         { start: 'ein', ending: 'es' },
         { start: 'ein', ending: 'es' },
@@ -65,6 +71,7 @@ export const indefiniter = {
     },
     {
       header: { title: 'Feminin', color: 'red' },
+      gender: 'f',
       cols: [
         { start: 'ein**e**', ending: 'e' },
         { start: 'ein**e**', ending: 'e' },
@@ -73,6 +80,7 @@ export const indefiniter = {
     },
     {
       header: { title: 'Plural', color: 'yellow' },
+      gender: 'p',
       cols: [
         { start: '**—**', ending: 'e' },
         { start: '**—**', ending: 'e' },
@@ -87,18 +95,22 @@ export const nullartikel = {
   rows: [
     {
       header: { title: 'Maskulin', color: 'blue' },
+      gender: 'm',
       cols: [{ ending: 'er' }, { ending: 'en' }, { ending: 'em' }],
     },
     {
       header: { title: 'Neutrum', color: 'green' },
+      gender: 'n',
       cols: [{ ending: 'es' }, { ending: 'es' }, { ending: 'em' }],
     },
     {
       header: { title: 'Feminin', color: 'red' },
+      gender: 'f',
       cols: [{ ending: 'e' }, { ending: 'e' }, { ending: 'er' }],
     },
     {
       header: { title: 'Plural', color: 'yellow' },
+      gender: 'p',
       cols: [{ ending: 'e' }, { ending: 'e' }, { ending: 'en' }],
     },
   ],
