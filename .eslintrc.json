@@ -1,0 +1,29 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "parser": "babel-eslint",
+  "plugins": ["react"],
+  "rules": {
+    "no-console": "warn",
+    "no-const-assign": "error",
+    "no-this-before-super": "error",
+    "no-undef": "error",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "react/display-name": "off",
+    "react/prop-types": "off"
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended"]
+}
