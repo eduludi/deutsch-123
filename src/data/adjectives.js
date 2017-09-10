@@ -84,7 +84,7 @@ export const indefiniter = {
       cols: [
         { start: '**—/keine**', ending: 'e' },
         { start: '**—/keine**', ending: 'e' },
-        { start: '**—/keinen**', ending: 'en' },
+        { start: '**—/keinen**', ending: 'en/e' },
       ],
     },
   ],
