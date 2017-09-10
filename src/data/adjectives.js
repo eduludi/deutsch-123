@@ -82,9 +82,9 @@ export const indefiniter = {
       header: { title: 'Plural', color: 'yellow' },
       gender: 'p',
       cols: [
-        { start: '**—**', ending: 'e' },
-        { start: '**—**', ending: 'e' },
-        { start: '**—**', ending: 'en' },
+        { start: '**—/keine**', ending: 'e' },
+        { start: '**—/keine**', ending: 'e' },
+        { start: '**—/keinen**', ending: 'en' },
       ],
     },
   ],
